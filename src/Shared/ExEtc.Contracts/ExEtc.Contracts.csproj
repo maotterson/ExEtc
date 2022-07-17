@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Strava\v3\Athletes\" />
+    <Folder Include="Strava\v3\Clubs\" />
+    <Folder Include="Strava\v3\Uploads\" />
+  </ItemGroup>
+
 </Project>
