@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32505.426
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEtc.Domain", "ExEtc.Domain\ExEtc.Domain.csproj", "{985DDFEC-8A70-4D6B-8444-C0257D5E3777}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B9AC7A4B-1037-481B-A6CD-6A36DCD8DC9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E3973804-118F-4241-BF25-F8655AB668C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{11320135-F644-4481-949A-F64AAA1D58B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MauiApp", "MauiApp", "{6C113DD8-8A7D-4AA5-8C4A-C18F31804D39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{BB721243-0DAF-4040-8E12-E258B20CD008}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{DFB2F29A-5317-4D0B-8AC2-1F0B9349C358}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExEtc.Domain", "src\Shared\ExEtc.Domain\ExEtc.Domain.csproj", "{5CB92BD3-058C-47D8-85D6-7ACE1202E70C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEtc.Contracts", "src\Shared\ExEtc.Contracts\ExEtc.Contracts.csproj", "{F2B4DDBA-7F79-4208-AB33-649CC2CFB741}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +25,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{985DDFEC-8A70-4D6B-8444-C0257D5E3777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{985DDFEC-8A70-4D6B-8444-C0257D5E3777}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{985DDFEC-8A70-4D6B-8444-C0257D5E3777}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{985DDFEC-8A70-4D6B-8444-C0257D5E3777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB92BD3-058C-47D8-85D6-7ACE1202E70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB92BD3-058C-47D8-85D6-7ACE1202E70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB92BD3-058C-47D8-85D6-7ACE1202E70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB92BD3-058C-47D8-85D6-7ACE1202E70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B4DDBA-7F79-4208-AB33-649CC2CFB741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B4DDBA-7F79-4208-AB33-649CC2CFB741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B4DDBA-7F79-4208-AB33-649CC2CFB741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B4DDBA-7F79-4208-AB33-649CC2CFB741}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C113DD8-8A7D-4AA5-8C4A-C18F31804D39} = {B9AC7A4B-1037-481B-A6CD-6A36DCD8DC9B}
+		{BB721243-0DAF-4040-8E12-E258B20CD008} = {B9AC7A4B-1037-481B-A6CD-6A36DCD8DC9B}
+		{DFB2F29A-5317-4D0B-8AC2-1F0B9349C358} = {B9AC7A4B-1037-481B-A6CD-6A36DCD8DC9B}
+		{5CB92BD3-058C-47D8-85D6-7ACE1202E70C} = {BB721243-0DAF-4040-8E12-E258B20CD008}
+		{F2B4DDBA-7F79-4208-AB33-649CC2CFB741} = {BB721243-0DAF-4040-8E12-E258B20CD008}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55C53145-BB14-4CD4-BAFA-DDA36F775148}
