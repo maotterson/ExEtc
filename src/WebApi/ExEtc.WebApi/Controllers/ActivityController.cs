@@ -16,7 +16,7 @@ public class ActivityController : ControllerBase
         _stravaApi = stravaApi;
     }
 
-    [HttpGet(Name = "CreateActivity")]
+    [HttpPost(Name = "CreateActivity")]
     public async Task<ActionResult<CreateActivityResponse>> Post(CreateActivityCommand createActivityCommand)
     {
         var response = await _stravaApi.CreateActivity(createActivityCommand);
