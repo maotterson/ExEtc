@@ -1,11 +1,17 @@
 using ExEtc.WebApi.Application.Apis;
+using ExEtc.WebApi.Application.Strava.Settings;
 using Refit;
+using System.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRefitClient<IStravaApi>()
-    .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://www.strava.com/api"));
+    .ConfigureHttpClient(c => {
+        var settings = builder.Configuration.GetSection("Strava").Get<StravaApiSettings>();
+        c.BaseAddress = new Uri("https://www.strava.com/api");
+        c.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", settings.AccessToken);
+    });
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
