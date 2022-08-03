@@ -9,5 +9,5 @@ public interface IStravaApi
     [Post("/v3/activities")]
     Task<CreateActivityResponse> CreateActivity(CreateActivityCommand command);
     [Get("/v3/athletes/{id}/stats")]
-    Task<GetAthleteStatsResponse> GetAthleteStats(string id);
+    Task<GetAthleteStatsResponse> GetAthleteStats(long id);
 }
