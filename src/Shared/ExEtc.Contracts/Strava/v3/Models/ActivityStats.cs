@@ -15,27 +15,3 @@ public record ActivityStats
     [JsonPropertyName("all_run_totals")] public ActivityTotal AllRunTotals { get; set; }
     [JsonPropertyName("all_swim_totals")] public ActivityTotal AllSwimTotals { get; set; }
 }
-
-/*
- * biggest_ride_distance
-biggest_climb_elevation_gain
-double 	The highest climb ridden by the athlete.
-recent_ride_totals
-ActivityTotal 	The recent (last 4 weeks) ride stats for the athlete.
-recent_run_totals
-ActivityTotal 	The recent (last 4 weeks) run stats for the athlete.
-recent_swim_totals
-ActivityTotal 	The recent (last 4 weeks) swim stats for the athlete.
-ytd_ride_totals
-ActivityTotal 	The year to date ride stats for the athlete.
-ytd_run_totals
-ActivityTotal 	The year to date run stats for the athlete.
-ytd_swim_totals
-ActivityTotal 	The year to date swim stats for the athlete.
-all_ride_totals
-ActivityTotal 	The all time ride stats for the athlete.
-all_run_totals
-ActivityTotal 	The all time run stats for the athlete.
-all_swim_totals
-ActivityTotal 	The all time swim stats for the athlete. 
-*/
