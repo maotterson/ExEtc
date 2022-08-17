@@ -17,10 +17,14 @@ public class AthletesController : ControllerBase
         _stravaApi = stravaApi;
     }
 
-    [HttpPost(Name = "GetAthleteStats")]
-    public async Task<ActionResult<GetAthleteStatsResponse>> Get(GetAthleteStatsQuery getAthleteStatsQuery)
+    [HttpGet("{id}", Name = "GetAthleteStatsById")]
+    public async Task<ActionResult<GetAthleteStatsResponse>> Get(long id)
     {
-        var response = await _stravaApi.GetAthleteStats(getAthleteStatsQuery.Id);
+        var query = new GetAthleteStatsQuery()
+        {
+            Id = id
+        };
+        var response = await _stravaApi.GetAthleteStats(query.Id);
         return Ok(response);
     }
 }
