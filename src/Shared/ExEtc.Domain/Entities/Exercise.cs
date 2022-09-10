@@ -2,6 +2,5 @@
 public class Exercise
 {
     public ExerciseType Type { get; set; }
-    public int NumberOfSets { get; set; }
-    public int 
+    public Collection<SetInfo> Sets { get; set; } = new Collection<SetInfo>();
 }
