@@ -1,6 +1,7 @@
 using ExEtc.Contracts.Strava.v3.Activities.CreateActivity;
 using ExEtc.Contracts.Strava.v3.Athletes.GetAthleteStats;
 using ExEtc.WebApi.Application.Apis;
+using ExEtc.WebApi.Controllers.v3;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExEtc.WebApi.Controllers;
