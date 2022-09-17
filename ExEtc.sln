@@ -26,7 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExEtc.WebApi", "src\WebApi\ExEtc.WebApi\ExEtc.WebApi.csproj", "{68D1C29E-4834-4075-8C8C-1C2CD1B436AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEtc.Mobile", "src\MauiApp\ExEtc.Mobile\ExEtc.Mobile.csproj", "{1C71AE82-AB12-485F-882B-C71D6E61E2E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExEtc.Mobile", "src\MauiApp\ExEtc.Mobile\ExEtc.Mobile.csproj", "{1C71AE82-AB12-485F-882B-C71D6E61E2E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,5 +1,4 @@
-﻿using ExEtc.Mobile.Data;
-using Microsoft.AspNetCore.Components.WebView.Maui;
+﻿using Microsoft.AspNetCore.Components.WebView.Maui;
 
 namespace ExEtc.Mobile;
 public static class MauiProgram
@@ -18,8 +17,6 @@ public static class MauiProgram
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
-
-        builder.Services.AddSingleton<WeatherForecastService>();
 
         return builder.Build();
     }
