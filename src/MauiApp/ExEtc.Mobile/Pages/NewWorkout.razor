@@ -1,7 +1,21 @@
 ﻿@page "/newworkout"
 
-<h3>NewWorkout</h3>
+<h3>Create New Workout</h3>
+<form>
+    <div>
+        <label>Title</label>
+        <input type="text"/>
+    </div>
+    <div>
+        <label>Category</label>
+        <input type="text"/>
+    </div>
+    <button @onclick="AddExercise">Add New Exercise</button>
+</form>
 
 @code {
-
+    public void AddExercise()
+    {
+        
+    }
 }
