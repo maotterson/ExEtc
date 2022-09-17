@@ -2,5 +2,5 @@
 public class Exercise
 {
     public ExerciseType Type { get; set; }
-    public Collection<SetInfo> Sets { get; set; } = new Collection<SetInfo>();
+    public List<SetInfo> Sets { get; set; } = new List<SetInfo>();
 }
