@@ -1,4 +1,6 @@
 ﻿@page "/newworkout"
+@using ExEtc.Mobile.Components
+@using ExEtc.Mobile.Data
 
 <h3>Create New Workout</h3>
 <form>
@@ -13,9 +15,11 @@
     <button @onclick="AddExercise">Add New Exercise</button>
 </form>
 
-@code {
+    @code {
+    public List<ExerciseDto> Exercises { get; set; }
     public void AddExercise()
     {
+        var component = new NewExerciseComponent();
         
     }
 }

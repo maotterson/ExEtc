@@ -1,0 +1,23 @@
+﻿<div>
+    <label>Exercise Type</label>
+    <input type="text" />
+</div>
+<div>
+    <label>Weight</label>
+    <input type="text" />
+</div>
+<div>
+    <label>Reps</label>
+    <input type="text" />
+</div>
+<button @onclick="RemoveComponent">Remove</button>
+
+@code {
+    [Parameter]
+    public EventCallback OnRemoveExerciseComponent { get; set; }
+
+    public async Task RemoveComponent()
+    {
+        await OnRemoveExerciseComponent.InvokeAsync();
+    }
+}
