@@ -5,4 +5,8 @@ public class NewWorkoutService : INewWorkoutService
 {
     public List<ExerciseDto> Exercises { get; set; } = new List<ExerciseDto>();
 
+    public void NewExercise()
+    {
+        throw new NotImplementedException();
+    }
 }
