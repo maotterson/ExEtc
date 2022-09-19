@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components.WebView.Maui;
+﻿using ExEtc.Mobile.Services;
+using Microsoft.AspNetCore.Components.WebView.Maui;
 
 namespace ExEtc.Mobile;
 public static class MauiProgram
@@ -17,6 +18,8 @@ public static class MauiProgram
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
+
+        builder.Services.AddSingleton<INewWorkoutService, NewWorkoutService>();
 
         return builder.Build();
     }
