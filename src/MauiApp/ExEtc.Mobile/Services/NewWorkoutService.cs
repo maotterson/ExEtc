@@ -3,7 +3,12 @@
 namespace ExEtc.Mobile.Services;
 public class NewWorkoutService : INewWorkoutService
 {
-    public List<ExerciseDto> Exercises { get; set; } = new List<ExerciseDto>();
+    private List<ExerciseDto> exercises = new List<ExerciseDto>();
+
+    public List<ExerciseDto> GetExercises()
+    {
+        return exercises;
+    }
 
     public void NewExercise()
     {

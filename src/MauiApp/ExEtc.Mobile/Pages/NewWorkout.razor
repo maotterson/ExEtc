@@ -14,11 +14,18 @@
         <label>Category</label>
         <input type="text"/>
     </div>
+    @foreach(var exercise in Exercises)
+    {
+        <div>
+            @exercise.Title
+        </div>
+    }
+    
     <button @onclick="NewExercise">Add New Exercise</button>
 </form>
 
 @code {
-    public List<ExerciseDto> Exercises { get; set; }
+    public List<ExerciseDto> Exercises => NewWorkoutService.GetExercises();
     public void NewExercise()
     {
         NewWorkoutService.NewExercise();
