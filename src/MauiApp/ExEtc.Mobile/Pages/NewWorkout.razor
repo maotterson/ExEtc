@@ -14,10 +14,11 @@
         <label>Category</label>
         <input type="text"/>
     </div>
-    @foreach(var exercise in Exercises)
+    @for(int i=0; i<ExerciseCounter; i++)
     {
         <div>
-            @exercise.Title
+            <label>Type</label>
+            <input type="text"/>
         </div>
     }
     
@@ -25,9 +26,10 @@
 </form>
 
 @code {
-    public List<ExerciseDto> Exercises => NewWorkoutService.GetExercises();
+    public int ExerciseCounter = 0;
     public void NewExercise()
     {
-        NewWorkoutService.NewExercise();
+        ExerciseCounter++;
+        StateHasChanged();
     }
 }
