@@ -22,7 +22,9 @@
         </div>
     }
     
-    <button @onclick="NewExercise">Add New Exercise</button>
+    <div 
+        class="px-4 py-4"
+        @onclick="NewExercise">Add New Exercise</div>
 </form>
 
 @code {
@@ -30,6 +32,5 @@
     public void NewExercise()
     {
         ExerciseCounter++;
-        StateHasChanged();
     }
 }
