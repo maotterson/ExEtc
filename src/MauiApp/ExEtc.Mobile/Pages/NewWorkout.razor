@@ -25,10 +25,10 @@
 </form>
 
 @code {
-    public int ExerciseCounter = 0;
+    public List<ExerciseDto> ExerciseList => NewWorkoutService.GetExercises();
     public void NewExercise()
     {
-        ExerciseCounter++;
+        NewWorkoutService.NewExercise();
         StateHasChanged();
     }
 }
