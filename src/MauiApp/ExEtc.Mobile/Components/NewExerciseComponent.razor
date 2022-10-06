@@ -1,4 +1,5 @@
-﻿<div>
+﻿@using ExEtc.Mobile.Data
+<div>
     <label>Exercise Type</label>
     <input type="text" />
 </div>
@@ -17,6 +18,8 @@
 @code {
     [Parameter]
     public EventCallback OnRemoveExerciseComponent { get; set; }
+    [Parameter]
+    public ExerciseDto Exercise { get; set; }
 
     public async Task RemoveComponent()
     {

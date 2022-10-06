@@ -14,9 +14,9 @@
         <label>Category</label>
         <input type="text"/>
     </div>
-    @for(int i=0; i<ExerciseList.Count; i++)
+    @foreach(var exercise in ExerciseList)
     {
-        <NewExerciseComponent/>
+        <NewExerciseComponent Exercise="exercise"/>
     }
     
     <div 
