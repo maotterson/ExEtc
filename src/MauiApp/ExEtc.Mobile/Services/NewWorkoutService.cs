@@ -12,6 +12,7 @@ public class NewWorkoutService : INewWorkoutService
 
     public void NewExercise()
     {
-        throw new NotImplementedException();
+        var newExercise = new ExerciseDto();
+        exercises.Add(newExercise);
     }
 }
